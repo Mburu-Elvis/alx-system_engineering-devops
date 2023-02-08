@@ -24,3 +24,6 @@
 
 7. **firstdirectory** (file)
 - create a directory my_first_directory in /tmp
+
+8. **7-movethatfile**
+- move file betty from /tmp to /tmp/my_first_directory
