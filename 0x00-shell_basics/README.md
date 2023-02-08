@@ -7,3 +7,7 @@
 2. **1-listit** (file)
 - a script that lists the current directory contents
 - the file is executable
+
+3. **2-bring_me_home**
+- a script that changes the working directory to home
+
