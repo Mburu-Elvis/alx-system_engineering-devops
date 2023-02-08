@@ -13,3 +13,6 @@
 
 4. **3-listfiles**
 - a script that displays contents in a long format
+
+5. **4-listmorefiles**
+- list all files including hidden ones
