@@ -16,3 +16,8 @@
 
 5. **4-listmorefiles**
 - list all files including hidden ones
+
+6. **5-listfilesdigitsonly
+- list directory contents in long format 
+- user and group IDs numerical
+- list hidden files
