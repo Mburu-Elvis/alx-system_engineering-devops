@@ -27,3 +27,6 @@
 
 8. **7-movethatfile**
 - move file betty from /tmp to /tmp/my_first_directory
+
+9. **8-firstdelete**
+- delete betty (file in /tmp)
