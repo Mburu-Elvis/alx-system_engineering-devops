@@ -42,3 +42,6 @@
 
 13. **12-file_type**
 - print the file type of iamafile
+
+14. **13-symbolic_link**
+- symbolic link to /bin/ls named __ls__
