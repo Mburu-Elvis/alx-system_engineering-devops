@@ -11,3 +11,5 @@
 3. **2-bring_me_home**
 - a script that changes the working directory to home
 
+4. **3-listfiles**
+- a script that displays contents in a long format
