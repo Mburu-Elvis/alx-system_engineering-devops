@@ -30,3 +30,6 @@
 
 9. **8-firstdelete**
 - delete betty (file in /tmp)
+
+10. **9-firstdeletion**
+- delete my_first_directory from /tmp
