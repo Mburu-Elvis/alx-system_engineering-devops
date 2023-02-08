@@ -36,3 +36,6 @@
 
 11. **10-back**
 - change the working directory to the previous one
+
+12. **11-lists**
+- list all files in current direcory and parent directory and /boot directory
