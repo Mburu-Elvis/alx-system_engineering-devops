@@ -21,3 +21,6 @@
 - list directory contents in long format 
 - user and group IDs numerical
 - list hidden files
+
+7. **firstdirectory** (file)
+- create a directory my_first_directory in /tmp
