@@ -39,3 +39,6 @@
 
 12. **11-lists**
 - list all files in current direcory and parent directory and /boot directory
+
+13. **12-file_type**
+- print the file type of iamafile
