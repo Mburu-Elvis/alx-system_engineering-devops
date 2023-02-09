@@ -17,3 +17,6 @@
 
 6. **5-execute**
 - a script that adds execute permission to the file hello
+
+7. **6-multiple_permissions**
+- a script adding execute permission to user and groups owner, read permission to others
