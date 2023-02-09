@@ -51,3 +51,6 @@
 
 16. **100-lets_move**
 - move all files beginning with uppercase letter to /tmp/u
+
+17. **101-clean_emacs**
+- delete all files in the current working directory ending with ~
