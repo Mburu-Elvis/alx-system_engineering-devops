@@ -20,3 +20,9 @@
 
 7. **6-multiple_permissions**
 - a script adding execute permission to user and groups owner, read permission to others
+
+8. **7-everyone**
+- a script that adds execution permission to owner, group owner ad other users of hello file
+
+9. **8-James-Bond**
+- a script that sets the permission to the file hello
