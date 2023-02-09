@@ -11,3 +11,6 @@
 
 4. **3-new_owner**
 - make betty the owner of hello file
+
+5. **4-empty**
+- a script that creates an empty file hello
