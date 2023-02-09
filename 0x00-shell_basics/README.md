@@ -64,3 +64,6 @@
 - hidden files listed
 - alpha ordered listing
 - listing end with a new file
+
+20. **school.mdc**
+- a magic file that can detect School data files when used with file command
