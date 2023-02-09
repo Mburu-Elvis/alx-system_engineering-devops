@@ -29,3 +29,9 @@
 
 10. **9-John_Doe**
 - a script that sets the hello file to -rwxr-x-wx
+
+11. **10-mirror_permissions**
+- a script that ests the mode of the file hello the same as that of olleh
+
+12. **11-directories_permissions**
+- a script that adds execute permission to all subdirectories of the current directory
