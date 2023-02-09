@@ -54,3 +54,6 @@
 
 17. **101-clean_emacs**
 - delete all files in the current working directory ending with ~
+
+18. **102-tree**
+- create directories welcome, welcome/to and welcome/to/school
