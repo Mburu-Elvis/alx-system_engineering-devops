@@ -57,3 +57,10 @@
 
 18. **102-tree**
 - create directories welcome, welcome/to and welcome/to/school
+
+19. **103-commas**
+- list all files and directories in the current directory separated by commas
+- directory names ending with /
+- hidden files listed
+- alpha ordered listing
+- listing end with a new file
