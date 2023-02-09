@@ -8,3 +8,6 @@
 
 3. **2-groups**
 - print all the groups the current user is part of
+
+4. **3-new_owner**
+- make betty the owner of hello file
