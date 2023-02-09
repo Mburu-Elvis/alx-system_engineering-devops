@@ -1,5 +1,9 @@
 ## 0x00-shell_basics directory
 ---
+
+## Mandatory Tasks
+---
+
 1. **0-current_working_directory** (file)
 - a script that prints the absolute path name of the current working directory
 - Made the file executable
@@ -48,6 +52,9 @@
 
 15. **14-copy_html**
 - copy new or newer html files to parent directory
+
+## Advanced Tasks
+---
 
 16. **100-lets_move**
 - move all files beginning with uppercase letter to /tmp/u
