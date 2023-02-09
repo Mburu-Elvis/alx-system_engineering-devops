@@ -14,3 +14,6 @@
 
 5. **4-empty**
 - a script that creates an empty file hello
+
+6. **5-execute**
+- a script that adds execute permission to the file hello
