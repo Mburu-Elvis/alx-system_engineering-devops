@@ -46,5 +46,8 @@
 14. **13-symbolic_link**
 - symbolic link to /bin/ls named __ls__
 
-15 **14-copy_html**
+15. **14-copy_html**
 - copy new or newer html files to parent directory
+
+16. **100-lets_move**
+- move all files beginning with uppercase letter to /tmp/u
