@@ -26,3 +26,6 @@
 
 9. **8-James-Bond**
 - a script that sets the permission to the file hello
+
+10. **9-John_Doe**
+- a script that sets the hello file to -rwxr-x-wx
