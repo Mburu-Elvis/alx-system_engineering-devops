@@ -35,3 +35,9 @@
 
 12. **11-directories_permissions**
 - a script that adds execute permission to all subdirectories of the current directory
+
+13. **12-directory_permissions**
+- a script that creates a directory mydir with permissions 751 in the working directory
+
+14. **13-change_group**
+- A script that changes the group owner to school fo the file hello
