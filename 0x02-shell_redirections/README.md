@@ -12,5 +12,8 @@
 4. ***3-twofiles***
 - a script that dispays contents of /etc/passwd and /etc/hosts
 
-5. ***4-lastlines**
+5. ***4-lastlines***
 - a script that displays 10 last lines of /etc/passwd
+
+6. ***5-firstlines***
+- a script that displays 10 lines of /etc/passwd
