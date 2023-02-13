@@ -27,5 +27,8 @@
 - a script that writes into the file ls_cwd_content the result of the command ls -la
 - If the file ls_cwd_content already exists, it should be overwritten
 
-10. ***9-duplicate_last_line
+10. ***9-duplicate_last_line***
 - duplicate the last line of iacta
+
+11. ***10-no_more_js***
+- a script that deletes all the regular files with .js extension in the cwd and its sub-dirs
