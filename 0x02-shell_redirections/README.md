@@ -20,3 +20,9 @@
 
 7. ***6-third_line***
 - display the third line of iacta
+
+8. ***7-file***
+
+9. ***8-cwd_state
+- a script that writes into the file ls_cwd_content the result of the command ls -la
+- If the file ls_cwd_content already exists, it should be overwritten
