@@ -17,3 +17,6 @@
 
 6. ***5-firstlines***
 - a script that displays 10 lines of /etc/passwd
+
+7. ***6-third_line***
+- display the third line of iacta
