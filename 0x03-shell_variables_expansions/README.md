@@ -15,3 +15,6 @@
 
 7. ***6-create_local_variable***
 - a script that creates a new local variable BEST with the value School
+
+8. ***7-create_global_variables***
+- a script that creates a new global variable BEST with the value School
