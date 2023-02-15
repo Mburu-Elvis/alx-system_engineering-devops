@@ -19,5 +19,8 @@
 8. ***7-create_global_variables***
 - a script that creates a new global variable BEST with the value School
 
-9. ***8-true_knowledge
+9. ***8-true_knowledge***
 - a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
+
+10. ***9-divide and rule***
+- a script that prints the result of POWER divided by DIVIDE
