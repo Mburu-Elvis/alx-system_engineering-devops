@@ -6,3 +6,6 @@
 
 2. ***1-hello_you***
 - a script that prints "hello user" where user is the current user
+
+5. ***4-global_variables***
+- a script that lists environment variables
