@@ -24,3 +24,6 @@
 
 10. ***9-divide and rule***
 - a script that prints the result of POWER divided by DIVIDE
+
+11. ***10-love_exponent_breath***
+- a script that displays the result of BREATH power LOVE
