@@ -3,7 +3,10 @@
 i=1
 while [[ $i -le 20 ]]
 do
-echo $i
+if [[ $i -eq 4 || $i -eq 9 || $i -eq 17 ]]
+then
+	echo $i
+fi
 case $i in
 	4)
 		echo bad luck from China
@@ -15,6 +18,7 @@ case $i in
 		echo bad luck from Italy
 		;;
 	*)
+		echo $i
 		;;
 esac
 ((i++))
