@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+# Script that prints numbers 1 - 20 excluding various superstitious numbers
+i=1
+while [[ $i -le 20 ]]
+do
+if [[ $i -eq 4 ]]
+then
+echo bad luck from China
+elif [[ $i -eq 9 ]]
+then
+echo bad luck from Japan
+elif [[ $i -eq 17 ]]
+then
+echo bad luck from Italy
+else
+echo $i
+fi
+((i++))
+done
