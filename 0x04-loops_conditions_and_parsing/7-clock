@@ -11,5 +11,5 @@ echo Hour: $h
 	((m++))
 	done
 ((h++))
-m=0
+m=1
 done
