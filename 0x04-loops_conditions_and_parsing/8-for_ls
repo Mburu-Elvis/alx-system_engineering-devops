@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# my demo
-my_list=$(ls)
-for i in $my_list
+# print none hidden files
+my_file=$(ls)
+for i in $my_file
 do
 echo "$i" | cut -d '-' -f2
 done
