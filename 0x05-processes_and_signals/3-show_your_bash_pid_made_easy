@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script that displays the PID, along whith the process name
-my_pid=`pgrep -f bash`
+my_pid=$(pgrep -f bash)
 for i in $my_pid
 do
-	echo $i bash
+	echo "$i" bash
 done
