@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# the script displays a list of currently running proecesses
+ps -A u
