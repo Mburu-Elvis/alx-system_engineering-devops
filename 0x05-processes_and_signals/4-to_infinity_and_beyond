@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that prints "To ifinity and beyond" infinitely
+while  true
+do
+echo "To inifinity and beyond"
+sleep 2
+done
