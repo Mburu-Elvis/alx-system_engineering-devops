@@ -1,4 +1,4 @@
-#!/usr.bin/env bash
+#!/usr/bin/env bash
 # scrip for blocking IPs
 sed -e "s/^127\.0\.0\.1\tlocalhost\$/127\.0\.0\.2\tlocalhost/" /etc/hosts > /etc/hosts.new
 echo -e "8.8.8.8\tfacebook.com" >> /etc/hosts.new
