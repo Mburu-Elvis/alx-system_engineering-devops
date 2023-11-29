@@ -8,8 +8,7 @@ echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
 sudo bash -c 'cat <<EOF > /etc/nginx/sites-available/redirect_me
 server {
     listen 80;
-    server_name your_domain.com; # Change this to your domain
-
+    107952-web-01 mburuelvis.tech;
     location /redirect_me {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
