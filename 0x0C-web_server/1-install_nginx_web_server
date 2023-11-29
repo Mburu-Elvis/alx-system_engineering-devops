@@ -3,6 +3,7 @@
 sudo apt update
 sudo apt install nginx -y
 sudo ufw allow 'Nginx HTTP'
+sudo sed -i 's/.listen 80./listen 80;/g' /etc/nginx/sites-available/default
 echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
 sudo /etc/init.d/nginx reload
 curl -s http://localhost:80/
