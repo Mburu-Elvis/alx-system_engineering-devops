@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Update system packages
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx -y
+sudo sed -i 's/^.*listen.*$/listen 80;/g' /etc/nginx/sites-available/default
+echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
+sudo bash -c 'cat <<EOF > /etc/nginx/sites-available/redirect_me
+server {
+    listen 80;
+    server_name your_domain.com; # Change this to your domain
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+}
+EOF'
+sudo ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
+sudo rm /etc/nginx/sites-enabled/default
+sudo nginx -t
+sudo killall -s HUP nginx
