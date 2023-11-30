@@ -1,20 +1,8 @@
 #!/usr/bin/env bash
 # Update system packages
-sudo apt update
-sudo apt upgrade -y
-sudo apt install nginx -y
-sudo sed -i 's/^.*listen.*$/listen 80;/g' /etc/nginx/sites-available/default
-echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
-sudo bash -c 'cat <<EOF > /etc/nginx/sites-available/redirect_me
-server {
-    listen 80;
-    107952-web-01 mburuelvis.tech;
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-}
-EOF'
-sudo ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
-sudo rm /etc/nginx/sites-enabled/default
-sudo nginx -t
-sudo killall -s HUP nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World" | sudo tee /var/www/html/index
+sudo sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/ permanent;' /etc/nginx/sites-available/default
+sudo service nginx restart
