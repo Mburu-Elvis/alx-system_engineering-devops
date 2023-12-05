@@ -18,3 +18,4 @@ sudo sed -i "s/listen 80 default_server;/$new_string/" /etc/nginx/sites-enabled/
 
 # Testing configurations for syntax errors
 sudo nginx -t
+sudo service nginx restart
