@@ -1,12 +1,20 @@
 #!/usr/bin/env bash
 # Update system packages
-sudo apt-get -y update
-sudo apt-get -y install nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 
+# Creating an index.html page
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
-sudo sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/ permanent;' /etc/nginx/sites-available/default
+# Performing a "moved permanently redirection" (301)
+new_string="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com permanent;"
+sudo sed -i "s/server_name _;/$new_string/" /etc/nginx/sites-enabled/default
 
+# Creating a 404 Custom error page
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+new_string="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 
-sudo service nginx start
+sudo sed -i "s/listen 80 default_server;/$new_string/" /etc/nginx/sites-enabled/default
+
+# Testing configurations for syntax errors
+sudo nginx -t
