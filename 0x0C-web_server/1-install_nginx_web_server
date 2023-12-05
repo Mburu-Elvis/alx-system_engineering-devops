@@ -2,6 +2,15 @@
 # installs nginx
 sudo apt-get update
 sudo apt-get -y install nginx
+
+# Configuring the Uncomplicated Firewall (UFW) to allow incoming traffic for the Nginx HTTP service
 sudo ufw allow 'Nginx HTTP'
-sudo echo "Hello, world!" | sudo tee /var/www/html/index.html
-sudo service nginx restart
+
+# Creating an index.html page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Testing Nginx configurations for Syntax errors
+sudo nginx -t
+
+# Restarting Nginx
+sudo service nginx start
