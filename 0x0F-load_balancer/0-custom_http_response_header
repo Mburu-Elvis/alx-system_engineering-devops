@@ -16,7 +16,7 @@ sudo sed -i "s/server_name _;/$redirect/" /etc/nginx/sites-enabled/default
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 
 # custom http response header
-sudo sed -i "server_name _;/a add_header X-Served_By $HOSTNAME;" /etc/ngnx/sites-enabled/defauld
+sudo sed -i "server_name _;/a add_header X-Served_By $HOSTNAME;" /etc/ngnx/sites-enabled/default
 
 # syntax error
 sudo nginx -t
