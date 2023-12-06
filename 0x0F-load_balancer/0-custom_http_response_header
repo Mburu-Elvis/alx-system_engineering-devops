@@ -18,7 +18,7 @@ echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 # custom http response header
 sudo sed -i "server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
 
-# syntax error
+# syntax error checking
 sudo nginx -t
 
 # restart service
