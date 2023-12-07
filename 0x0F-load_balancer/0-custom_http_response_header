@@ -1,26 +1,19 @@
 #!/usr/bin/env bash
 # script configuring a server to have a customized pesponse header
-
 sudo apt-get update
 sudo apt-get install -y nginx
-
 # index page
 echo "Hello World!" | sudo tee /var/www/html/index.html
-
 # redirection
 var_redirect="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com permanent;"
-
 sudo sed -i "s/server_name _;/$var_redirect/" /etc/nginx/sites-enabled/default
-
 # Error page
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
-
+sudo nginx -t
+sudo service nginx start
 # custom http response header
-
 sudo sed -i "server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
-
 # syntax error checking
 sudo nginx -t
-
 # restart service
 sudo service nginx restart
