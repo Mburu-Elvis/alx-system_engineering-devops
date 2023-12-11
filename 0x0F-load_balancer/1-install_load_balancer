@@ -3,14 +3,13 @@
 # edit config file
 server_config=\
 "
-frontend  mburu_frontend
+frontend  alx_loadbalancing
         bind *:80
-        mode http
-        default_backend mburu_backend
-backend mburu_backend
+        default_backend alx_backend
+backend alx_backend
         balance roundrobin
-        server 107952-web-02 54.237.208.45:80 check
-        server 107952-web-02 100.25.10.122:80 check
+        server 107952-web-01 54.237.208.45:80
+        server 107952-web-02 100.25.10.122:80
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 # enable haproxy to be started by init script
