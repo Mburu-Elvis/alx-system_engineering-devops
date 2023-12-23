@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 # script checking if container is listening on port 80
 sudo apt-get update
-if ! which nginx > /dev/null 2>&1; then
+if ! command -V nginx > /dev/null 2>&1; then
 	sudo apt-get install nginx -y
 fi
 nginx_status=$(sudo systemctl is-active nginx)
-if [ "&nginx_status" != "active" ]; then
+if [ "$nginx_status" != "active" ]; then
 	sudo service nginx start
 fi
-sudo nginx -t
-if [ $? -eq 0]; then
+if sudo ngnx -t &> /dev/null; then
 	stat=$(sudo netstat -lpn | grep ':80 ')
 	if [ -z "$stat" ]; then
 		sudo ufw allow 80
