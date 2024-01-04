@@ -26,7 +26,7 @@ def employeeToDo(employeeId, employeeName):
         total_tasks = len(todos)
         total_completed = len(completed_tasks)
         print(f'Employee {employeeName} is done with ', end='')
-        print(f'tasks({total_completed}/{total_tasks})')
+        print(f'tasks({total_completed}/{total_tasks}):')
 
         for task in completed_tasks:
             print(f"\t{task['title']}")
