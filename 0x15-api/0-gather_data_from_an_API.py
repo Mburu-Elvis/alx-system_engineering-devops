@@ -29,7 +29,7 @@ def employeeToDo(employeeId, employeeName):
         print(f'tasks({total_completed}/{total_tasks}):')
 
         for task in completed_tasks:
-            print(f"\t{task['title']}")
+            print(f"\t {task['title']}")
 
 
 try:
