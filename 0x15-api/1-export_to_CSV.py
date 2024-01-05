@@ -27,7 +27,7 @@ def employeeToDo(employeeId, username):
             status = task['completed']
             title = task['title']
             with open(f'{userId}.csv', 'a') as myfile:
-                row = f'"{userId}", "{username}", "{status}", "{title}\n"'
+                row = f'"{userId}", "{username}", "{status}", "{title}"\n'
                 myfile.write(f'{row}')
 
 
